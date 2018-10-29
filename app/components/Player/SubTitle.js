@@ -90,7 +90,6 @@ class SubTitle extends React.PureComponent {
   scrollToIndex = index => {
     // console.log(index, parsedSubtitle.length, index >= parsedSubtitle.length)
     if(index >= parsedSubtitle.length) return;
-    console.log('scroll to')
     this.flatList.current.scrollToIndex({ animated: false, index, viewPosition: 0.6 });
   }
 
